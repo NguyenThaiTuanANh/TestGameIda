@@ -114,6 +114,11 @@
 
             canvas.style.width = width + "px";
             canvas.style.height = height + "px";
+            // Căn giữa canvas
+            canvas.style.position = "absolute";
+            canvas.style.left = "50%";
+            canvas.style.top = "50%";
+            canvas.style.transform = "translate(-50%, -50%)";
         }
 
         window.addEventListener("resize", resizeCanvas);
